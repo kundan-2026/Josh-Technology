@@ -41,7 +41,7 @@ button {
 /* Header Styles */
 .main-header {
   background-color: #1AC073;
-  color: var(--white);
+  color: white;
   padding: 15px 0;
   /* position: sticky; */
   top: 0;
@@ -57,7 +57,7 @@ button {
 .logo {
   font-size: 24px;
   font-weight: 700;
-  color: var(--white);
+  color: white;
 }
 
 .main-nav ul {
