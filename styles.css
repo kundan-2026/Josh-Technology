@@ -228,7 +228,7 @@ section h2 {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 70%;
-  color:black;
+  color: black;
 }
 
 .food-price {
