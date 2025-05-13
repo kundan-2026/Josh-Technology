@@ -367,7 +367,7 @@ section h2 {
 }
 
 .modal-content {
-  background-color: var(--white);
+  background-color: white;
   border-radius: 12px;
   padding: 30px;
   width: 100%;
