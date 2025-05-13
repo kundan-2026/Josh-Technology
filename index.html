@@ -2,599 +2,207 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Authentic Home Food Delivery</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JoshTechnologyGroup Assignment</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">JTGeats</div>
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="header-actions">
-                    <button class="search-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                        </svg>
-                    </button>
-                    <button class="cart-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="9" cy="21" r="1"></circle>
-                            <circle cx="20" cy="21" r="1"></circle>
-                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
+  <!-- Header Section -->
+  <header class="main-header">
+    <div class="container header-content">
+      <div class="logo">JTGeats</div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="search-btn" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z"
+              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M19 19L14.65 14.65" stroke="white" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+        <button class="cart-btn">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6 1L3 5V16C3 16.5304 3.21071 17.0391 3.58579 17.4142C3.96086 17.7893 4.46957 18 5 18H15C15.5304 18 16.0391 17.7893 16.4142 17.4142C16.7893 17.0391 17 16.5304 17 16V5L14 1H6Z"
+              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M3 5H17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M13 9C13 10.0609 12.5786 11.0783 11.8284 11.8284C11.0783 12.5786 10.0609 13 9 13C7.93913 13 6.92172 12.5786 6.17157 11.8284C5.42143 11.0783 5 10.0609 5 9"
+              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <hr style="margin-top :10px; border:0.03em solid white">
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Authentic Home food in India</h1>
+        <p>JTGeats is a courier service in which authentic home cooked food is delivered to a customer.</p>
+        <div class="search-container">
+          <input type="text" placeholder="Search food you love">
+          <button class="search-button">Search</button>
         </div>
-    </header>
+      </div>
+      <div class="hero-image">
+        <img src="cooking.svg" alt="Delicious food">
+      </div>
+    </div>
+  </section>
 
-    <section class="hero-section">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Authentic Home food in India</h1>
-                    <p>JTGeats is a courier service in which authentic home cooked food is delivered to a customer.</p>
-                    <div class="search-container">
-                        <input type="text" placeholder="Search food you love">
-                        <button class="search-button">Search</button>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="chef2.png" alt="Chef cooking home food">
-                </div>
-            </div>
+  <!-- Home Kitchen Section -->
+  <section class="home-kitchen">
+    <div class="container">
+      <h2 id="hm-kitchen">Home Kitchen</h2>
+      <div class="food-grid" id="home-kitchen-grid">
+        <!-- Items will be generated by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Items Section -->
+  <section class="popular-items">
+    <div class="container">
+      <h2 class="pop-heading">Popular Items</h2>
+      <div class="carousel-container">
+        <button class="carousel-arrow prev" aria-label="Previous items">
+          <svg width="50" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 18L9 12L15 6" stroke="#10B981" stroke-width="" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div class="carousel-items" id="popular-items-carousel">
+          <!-- Items will be generated by JavaScript -->
         </div>
-    </section>
+        <button class="carousel-arrow next" aria-label="Next items">
+          <svg width="50" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 18L15 12L9 6" stroke="#10B981" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="request-dish">
+        <button class="request-dish-btn">Request a Dish</button>
+      </div>
+    </div>
+  </section>
 
-
-
-
-
-    <section class="home-kitchen">
-        <div class="container">
-            <h3 class="home-kitchen-logo">Home Kitchen</h3>
-            <div class="food-grid">
-                <!-- Row 1 -->
-                <div class="food-card">
-                    <div class="food-image">
-                        <img src="https://i.pinimg.com/736x/b0/ca/32/b0ca32465f36b9b135c021e5f25dc938.jpg"
-                            alt="Home made pizza">
-                        <div class="discount-tag">50%
-                        </div>
-                    </div>
-                    <div class="food-details">
-                        <h3>Home made pizza</h3>
-                        <p class="price">₹190</p>
-                        <div class="food-meta">
-                            <div class="rating">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="black" stroke="black" stroke-width="1" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <polygon
-                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                    </polygon>
-                                </svg>
-                                <span>4.7</span>
-                            </div>
-                            <div class="time">
-                                <span>(50-79 min)</span>
-                            </div>
-                            <button class="add-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="food-card">
-                    <div class="food-image">
-                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBpenphJTIwcG5nfGVufDB8fDB8fHww"
-                            alt="Home made pizza">
-                    </div>
-                    <div class="food-details">
-                        <h3>Home made pizza</h3>
-                        <p class="price">₹123</p>
-                        <div class="food-meta">
-                            <div class="rating">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="black" stroke="black" stroke-width="1" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <polygon
-                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                    </polygon>
-                                </svg>
-                                <span>4.7</span>
-                            </div>
-                            <div class="time">
-                                <span>(50-79 min)</span>
-                            </div>
-                            <button class="add-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="food-card">
-                    <div class="food-image">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJjPWqycN-S4szRAd136kfq56vEl3bCWbJTg&s"
-                            alt="Home made pizza">
-                        <div class="discount-tag">20% </div>
-                    </div>
-                    <div class="food-details">
-                        <h3>Home made pizza</h3>
-                        <p class="price">₹190</p>
-                        <div class="food-meta">
-                            <div class="rating">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="black" stroke="black" stroke-width="1" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <polygon
-                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                    </polygon>
-                                </svg>
-                                <span>4.2</span>
-                            </div>
-                            <div class="time">
-                                <span>(50-79 min)</span>
-                            </div>
-                            <button class="add-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="food-card">
-                    <div class="food-image">
-                        <img src="https://t4.ftcdn.net/jpg/06/07/04/41/360_F_607044129_mlPAREptH5szQjdJ8cku2tC718zawrxu.jpg"
-                            alt="Home made pizza">
-                    </div>
-                    <div class="food-details">
-                        <h3>Home made pizza</h3>
-                        <p class="price">₹190</p>
-                        <div class="food-meta">
-                            <div class="rating">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="black" stroke="black" stroke-width="1" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <polygon
-                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                    </polygon>
-                                </svg>
-                                <span>4.7</span>
-                            </div>
-                            <div class="time">
-                                <span>(50-79 min)</span>
-                            </div>
-                            <button class="add-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <line x1="12" y1="4" x2="12" y2="20"></line>
-                                    <line x1="4" y1="12" x2="20" y2="12"></line>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Row 2 -->
-                <div class="food-card">
-                    <div class="food-image">
-                        <img src="https://img.freepik.com/free-photo/top-view-pepperoni-pizza-with-mushroom-sausages-bell-pepper-olive-corn-black-wooden_141793-2158.jpg?semt=ais_hybrid&w=740"
-                            alt="Home made pizza">
-                        <div class="discount-tag">50% </div>
-                    </div>
-                    <div class="food-details">
-                        <h3>Home made pizza</h3>
-                        <p class="price">$19</p>
-                        <div class="food-meta">
-                            <div class="rating">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="black" stroke="black" stroke-width="1" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <polygon
-                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                    </polygon>
-                                </svg>
-                                <span>4.7</span>
-                            </div>
-                            <div class="time">
-                                <span>(50-79 min)</span>
-                            </div>
-                            <button class="add-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="food-card">
-                    <div class="food-image">
-                        <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGl6emElMjBwbmd8ZW58MHx8MHx8fDA%3D"
-                            alt="Home made pizza">
-                    </div>
-                    <div class="food-details">
-                        <h3>Home made pizza</h3>
-                        <p class="price">₹190</p>
-                        <div class="food-meta">
-                            <div class="rating">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="black" stroke="black" stroke-width="1" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <polygon
-                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                    </polygon>
-                                </svg>
-                                <span>4.7</span>
-                            </div>
-                            <div class="time">
-                                <span>(50-79 min)</span>
-                            </div>
-                            <button class="add-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="food-card">
-                    <div class="food-image">
-                        <img src="https://img.freepik.com/free-photo/mixed-pizza-with-various-ingridients_140725-3790.jpg?semt=ais_hybrid&w=740"
-                            alt="Home made pizza">
-                        <div class="discount-tag">20% </div>
-                    </div>
-                    <div class="food-details">
-                        <h3>Home made pizza</h3>
-                        <p class="price">₹190</p>
-                        <div class="food-meta">
-                            <div class="rating">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="black" stroke="black" stroke-width="1" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <polygon
-                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                    </polygon>
-                                </svg>
-                                <span>4.7</span>
-                            </div>
-                            <div class="time">
-                                <span>(50-79 min)</span>
-                            </div>
-                            <button class="add-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="food-card">
-                    <div class="food-image">
-                        <img src="https://c4.wallpaperflare.com/wallpaper/886/874/504/pizza-cheese-tomatoes-mushrooms-wallpaper-preview.jpg"
-                            alt="Home made pizza">
-                        <div class="discount-tag">50% </div>
-                    </div>
-                    <div class="food-details">
-                        <h3>Home made pizza</h3>
-                        <p class="price">₹190</p>
-                        <div class="food-meta">
-                            <div class="rating">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="black" stroke="black" stroke-width="1" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <polygon
-                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                    </polygon>
-                                </svg>
-                                <span>4.7</span>
-                            </div>
-                            <div class="time">
-                                <span>(50-79 min)</span>
-                            </div>
-                            <button class="add-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- Request Dish Modal -->
+  <div class="modal-overlay" id="requestDishModal">
+    <div class="modal-content">
+      <h2>Request a Dish</h2>
+      <form id="dishRequestForm">
+        <div class="form-group">
+          <label for="dishName">Name*</label>
+          <input type="text" id="dishName" placeholder="Enter name of the dish" required>
         </div>
-    </section>
-
-
-    <section class="home-delivery-info">
-        <section class="popular-items">
-            <div class="container">
-                <h2>Popular Items</h2>
-                <div class="carousel-container">
-                    <button class="carousel-arrow prev" id="prevPopular">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="15 18 9 12 15 6"></polyline>
-                        </svg>
-                    </button>
-                    <div class="carousel-items" id="popularItemsCarousel">
-                        <div class="food-card">
-                            <div class="food-image">
-                                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBpenphJTIwcG5nfGVufDB8fDB8fHww"
-                                    alt="Home made pizza">
-                            </div>
-                            <div class="food-details">
-                                <h3>Home made pizza</h3>
-                                <p class="price">₹190</p>
-                                <div class="food-meta">
-                                    <div class="rating">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            viewBox="0 0 24 24" fill="black" stroke="black" stroke-width="1"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <polygon
-                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                            </polygon>
-                                        </svg>
-                                        <span>4.7</span>
-                                    </div>
-                                    <div class="time">
-                                        <span>(50-79 min)</span>
-                                    </div>
-                                    <button class="add-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <line x1="12" y1="5" x2="12" y2="19"></line>
-                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="food-card">
-                            <div class="food-image">
-                                <img src="https://t4.ftcdn.net/jpg/06/12/03/85/360_F_612038524_JSdZDp3QCWCntBgWTFuli5XtV0JIxZza.jpg"
-                                    alt="Tandoori Chicken">
-                                <div class="discount-tag">20% </div>
-                            </div>
-                            <div class="food-details">
-                                <h3>Tandoori Chicken</h3>
-                                <p class="price">₹184</p>
-                                <div class="food-meta">
-                                    <div class="rating">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            viewBox="0 0 24 24" fill="black" stroke="black" stroke-width="1"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <polygon
-                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                            </polygon>
-                                        </svg>
-                                        <span>4.5</span>
-                                    </div>
-                                    <div class="time">
-                                        <span>(15-20 min)</span>
-                                    </div>
-                                    <button class="add-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <line x1="12" y1="5" x2="12" y2="19"></line>
-                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="food-card">
-                            <div class="food-image">
-                                <img src="https://t4.ftcdn.net/jpg/06/12/03/85/360_F_612038524_JSdZDp3QCWCntBgWTFuli5XtV0JIxZza.jpg"
-                                    alt="Chicken Chorma">
-                                <div class="discount-tag">15% </div>
-                            </div>
-                            <div class="food-details">
-                                <h3>Tandoori Chorma</h3>
-                                <p class="price">₹190</p>
-                                <div class="food-meta">
-                                    <div class="rating">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            viewBox="0 0 24 24" fill="black" stroke="black" stroke-width="1"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <polygon
-                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                            </polygon>
-                                        </svg>
-                                        <span>4.8</span>
-                                    </div>
-                                    <div class="time">
-                                        <span>(15-20 min)</span>
-                                    </div>
-                                    <button class="add-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <line x1="12" y1="5" x2="12" y2="19"></line>
-                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="food-card">
-                            <div class="food-image">
-                                <img src="https://png.pngtree.com/thumb_back/fw800/background/20240109/pngtree-chilli-chicken-realistic-images-image_15609003.jpg"
-                                    alt="Chilli Chicken">
-                                <div class="discount-tag">30% </div>
-                            </div>
-                            <div class="food-details">
-                                <h3>Chilli Chicken</h3>
-                                <p class="price">₹105</p>
-                                <div class="food-meta">
-                                    <div class="rating">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            viewBox="0 0 24 24" fill="black" stroke="black" stroke-width="1"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <polygon
-                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                                            </polygon>
-                                        </svg>
-                                        <span>4.8</span>
-                                    </div>
-                                    <div class="time">
-                                        <span>(30-40 min)</span>
-                                    </div>
-                                    <button class="add-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <line x1="12" y1="5" x2="12" y2="19"></line>
-                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-arrow next" id="nextPopular">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="9 18 15 12 9 6"></polyline>
-                        </svg>
-                    </button>
-                </div>
-                <div class="request-dish">
-                    <button class="request-dish-btn">Request a Dish</button>
-                </div>
-            </div>
-        </section>
-        <div class="container">
-            <div class="info-content">
-                <div class="info-text">
-                    <h2>We are providing best home cooked food delivery service.</h2>
-                    <p>Away from home and craving the tasty homemade recipes? Choose from a selection of our delicious
-                        home-cooked food.</p>
-                </div>
-                <div class="info-video">
-                    <div class="video-container">
-                        <iframe width="auto" height="315"
-                            src="https://www.youtube.com/embed/sv3TXMSv6Lw?si=Q1HPw_j85nZysl5N"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
+        <div class="form-group">
+          <label for="dishImage">Upload an image</label>
+          <input type="url" id="dishImage" placeholder="Paste a URL">
         </div>
-    </section>
-    <section class="contact-section">
-        <div class="container">
-            <div class="contact-content">
-                <div class="contact-form">
-                    <h2>Do you have a question or want to become a seller?</h2>
-                    <p>Fill this form and our manager will contact you next 48 hours.</p>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" placeholder="Your e-mail" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" placeholder="Your message" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Submit</button>
-                    </form>
-                </div>
-                <div class="contact-image">
-                    <img src="https://img.pikbest.com/png-images/20241130/food-and-pizza-delivery-rider-illustration-transparent-background_11149523.png!sw800"
-                        alt="Delivery person on scooter">
-                </div>
-            </div>
+        <div class="modal-buttons">
+          <button type="button" class="cancel-btn">Cancel</button>
+          <button type="submit" class="submit-btn">Submit Request</button>
         </div>
-    </section>
+      </form>
+    </div>
+  </div>
 
-    <footer class="main-footer">
-        <div class="container">
-            <div class="footer-row">
-                <div class="footer-logo">JTEeats</div>
-
-                <ul class="footer-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-
-                <div class="social-links">
-                    <a href="#" class="social-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-link">
-                        <!-- Instagram -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                        </svg>
-                    </a>
-                </div>
+  <!-- Home Delivery Info Section -->
+  <section class="home-delivery-info">
+    <div class="container info-content">
+      <div class="info-text">
+        <h1>We are providing best <br> home cooked food delivery service.</h1>
+        <p>Away from home and craving the tasty homemade recipes? <br>Choose from a selection of our delicious
+          home-cooked food.</p>
+        <div class="info-video">
+          <div class="video-wrapper">
+            <div class="video-bg"></div>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/sv3TXMSv6Lw?si=Q1HPw_j85nZysl5N" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen title="Food delivery service video"></iframe>
             </div>
-
-            <hr style="border: 1px solid rgb(220, 220, 220);">
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container contact-content">
+      <div class="contact-form">
+        <h2>Do you have a question or want to become a seller?</h2>
+        <p>Fill this form and our manager will contact you next 48 hours.</p>
+        <form>
+          <div class="form-group">
+            <input type="text" placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email">
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+      <div class="contact-image">
+        <img src="delivery.png" alt="Delivery person on scooter">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-row">
+        <div class="footer-logo">JTGeats</div>
+        <ul class="footer-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="social-links">
+          <a href="https://www.instagram.com/josh.software/" class="social-link" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/JoshTechnologyGroup/" class="social-link" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <hr style="border: 1px solid white;">
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
