@@ -43,7 +43,6 @@ button {
   background-color: #1AC073;
   color: white;
   padding: 15px 0;
-  /* position: sticky; */
   top: 0;
   z-index: 100;
 }
@@ -278,10 +277,7 @@ section h2 {
   width: 25px;
   height: 25px;
   stroke: white;
-  /* White plus icon */
   stroke-width: 3;
-  /* Bold lines */
-
 }
 
 .pop-heading {
@@ -479,7 +475,6 @@ section h2 {
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
-  /* 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
   border-radius: 12px;
