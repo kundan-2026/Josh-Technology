@@ -1,52 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Popular Items Data
-  const popularItems = [
-    {
-      name: "Home made pizza",
-      price: "₹190",
-      rating: "4.7",
-      time: "(50-79 min)",
-      image:
-        "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-    },
-    {
-      name: "Tandoori Chicken",
-      price: "₹184",
-      discount: "20% ",
-      rating: "4.5",
-      time: "(15-20 min)",
-      image:
-        "https://t4.ftcdn.net/jpg/06/12/03/85/360_F_612038524_JSdZDp3QCWCntBgWTFuli5XtV0JIxZza.jpg",
-    },
-    {
-      name: "Chilli Chicken",
-      price: "$15.99",
-      discount: "25% ",
-      rating: "4.8",
-      time: "(35 min)",
-      image:
-        "https://png.pngtree.com/thumb_back/fw800/background/20240109/pngtree-chilli-chicken-realistic-images-image_15609003.jpg",
-    },
-    {
-      name: "Hawaiian Pizza",
-      price: "$14.49",
-      discount: "5% ",
-      rating: "4.2",
-      time: "(25 min)",
-      image:
-        "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-    },
-    {
-      name: "Tandoori Chorma",
-      price: "₹190",
-      discount: "10% ",
-      rating: "4.3",
-      time: "(20 min)",
-      image:
-        "https://t4.ftcdn.net/jpg/06/12/03/85/360_F_612038524_JSdZDp3QCWCntBgWTFuli5XtV0JIxZza.jpg",
-    },
-  ];
-
+  
   // Home Kitchen Data (updated with ratings and time)
   const homeKitchenItems = [
     {
@@ -129,7 +82,54 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   ];
 
-  // Generate Popular Items
+    // Popular Items Data
+  const popularItems = [
+    {
+      name: "Home made pizza",
+      price: "₹190",
+      rating: "4.7",
+      time: "(50-79 min)",
+      image:
+        "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    },
+    {
+      name: "Tandoori Chicken",
+      price: "₹184",
+      discount: "20% ",
+      rating: "4.5",
+      time: "(15-20 min)",
+      image:
+        "https://t4.ftcdn.net/jpg/06/12/03/85/360_F_612038524_JSdZDp3QCWCntBgWTFuli5XtV0JIxZza.jpg",
+    },
+    {
+      name: "Chilli Chicken",
+      price: "$15.99",
+      discount: "25% ",
+      rating: "4.8",
+      time: "(35 min)",
+      image:
+        "https://png.pngtree.com/thumb_back/fw800/background/20240109/pngtree-chilli-chicken-realistic-images-image_15609003.jpg",
+    },
+    {
+      name: "Hawaiian Pizza",
+      price: "$14.49",
+      discount: "5% ",
+      rating: "4.2",
+      time: "(25 min)",
+      image:
+        "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    },
+    {
+      name: "Tandoori Chorma",
+      price: "₹190",
+      discount: "10% ",
+      rating: "4.3",
+      time: "(20 min)",
+      image:
+        "https://t4.ftcdn.net/jpg/06/12/03/85/360_F_612038524_JSdZDp3QCWCntBgWTFuli5XtV0JIxZza.jpg",
+    },
+  ];
+
   const popularItemsCarousel = document.getElementById(
     "popular-items-carousel"
   );
@@ -137,7 +137,6 @@ document.addEventListener("DOMContentLoaded", function () {
     popularItemsCarousel.appendChild(createFoodCard(item, true));
   });
 
-  // Generate Home Kitchen Items (now with showMeta set to true)
   const homeKitchenGrid = document.getElementById("home-kitchen-grid");
   homeKitchenItems.forEach((item) => {
     homeKitchenGrid.appendChild(createFoodCard(item, true)); // Changed to true to show meta
@@ -189,13 +188,12 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
   `;
 
-    // Optionally, you can add a click listener to the button
-    const addBtn = card.querySelector(".add-btn");
-    if (addBtn) {
-      addBtn.addEventListener("click", () => {
-        alert(`${item.name} added to cart!`);
-      });
-    }
+    // const addBtn = card.querySelector(".add-btn");
+    // if (addBtn) {
+    //   addBtn.addEventListener("click", () => {
+    //     alert(`${item.name} added to cart!`);
+    //   });
+    // }
 
     return card;
   }
@@ -210,10 +208,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Set fixed width for food cards in carousel
   const foodCards = carousel.querySelectorAll(".food-card");
   foodCards.forEach((card) => {
-    card.style.minWidth = "300px"; // Fixed width for consistent scrolling
+    card.style.minWidth = "300px"; 
   });
 
-  const scrollAmount = 320; // Card width + gap
+  const scrollAmount = 320; 
   let maxScroll = carousel.scrollWidth - carousel.clientWidth;
 
   // Update button states
@@ -224,7 +222,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   nextBtn.addEventListener("click", () => {
     carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
-    setTimeout(updateButtons, 300); // Update after scroll completes
+    setTimeout(updateButtons, 300);
   });
 
   prevBtn.addEventListener("click", () => {
@@ -235,7 +233,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initialize button states
   updateButtons();
 
-  // Recalculate on window resize
   window.addEventListener("resize", () => {
     maxScroll = carousel.scrollWidth - carousel.clientWidth;
     updateButtons();
@@ -247,17 +244,15 @@ const requestDishModal = document.getElementById("requestDishModal");
 const cancelBtn = document.querySelector(".cancel-btn");
 const dishRequestForm = document.getElementById("dishRequestForm");
 
-// Open modal when Request Dish button is clicked
+
 requestDishBtn.addEventListener("click", () => {
   requestDishModal.style.display = "flex";
 });
 
-// Close modal when Cancel button is clicked
 cancelBtn.addEventListener("click", () => {
   requestDishModal.style.display = "none";
 });
 
-// Close modal when clicking outside the modal content
 requestDishModal.addEventListener("click", (e) => {
   if (e.target === requestDishModal) {
     requestDishModal.style.display = "none";
@@ -273,10 +268,8 @@ dishRequestForm.addEventListener("submit", (e) => {
   // Here you would typically send this data to your server
   console.log("Dish Request Submitted:", { dishName, dishImage });
 
-  // Show success message
   alert("Your dish request has been submitted successfully. I will notify!");
 
-  // Reset and close the form
   dishRequestForm.reset();
   requestDishModal.style.display = "none";
 });
